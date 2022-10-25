@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond Pattern</title>
+  <style>
+
+    body{
+      color: red;
+      background-color: yellow;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+
+  let i,j,k,l;
+  
+// Upside pyramid
+
+for(let i = 0; i < 4; i++ )
+{
+  let star = "";
+for (let j = 5; j > i; j--)
+{
+  star += " ";
+}
+for (let k = 0; k <= i; k++)
+{
+  star += "*";
+}
+for (let l = 1; l <= i; l++)
+{
+  star += "*";
+}
+ console.log(star)
+
+}
+// downside pyramid
+
+for(let i = 4; i >= 0; i-- )
+{
+  star = "";
+for (let j = 5; j > i; j--)
+{
+  star += " ";
+}
+for (let k = 0; k <= i; k++)
+{
+  star += "*";
+}
+for (let l = 1; l <= i; l++)
+{
+  star += "*";
+}
+
+console.log(star)
+
+}
+  </script>
+</body>
+</html>
